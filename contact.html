@@ -1,0 +1,216 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <style>
+  body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    background: -webkit-linear-gradient(Cornsilk, Bisque);
+    color: Sienna;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1%;
+    text-align: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: Sienna;
+    padding: 10px 12px;
+    border-bottom: 1px solid white;
+
+  }
+  header nav a:hover {
+    background: Sienna;
+    color: white;
+  }
+  .container {
+    margin: 2% 5%;
+  }
+  main {
+    background-image: url(poz3.jpg);
+    background-size: cover;
+    width: 100%;
+    margin-top: -23px;
+  }
+  form {
+    display: block;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    width: 76%;
+    margin: 2% auto;
+    background: -webkit-linear-gradient(Azure, NavajoWhite);
+    border-radius: 4%;
+    opacity: 0.9;
+  }
+  form div {
+    padding: 10px 18px;
+    display: flex;
+  }
+  label {
+    width: 32%;
+    color: SaddleBrown;
+    font-weight: bold;
+  }
+  input, select, textarea {
+    width: 54%;
+    padding: 6px;
+    border-radius: 1%;
+    border: 1px solid Sienna;
+    color: SaddleBrown;
+  }
+  select {
+    margin-bottom: 25px;
+  }
+textarea {
+  height: 90px;
+}
+button {
+  background: Sienna;
+  color: #fff;
+  font-weight: bold;
+  padding: 7px;
+  border: 1px solid Sienna;
+  border-radius: 1%;
+}
+button:hover {
+  cursor: pointer;
+  color: Sienna;
+  background: white;
+  border: 1px solid Sienna;
+}
+footer {
+  text-align: center;
+  padding: 3%;
+  color: white;
+}
+h1 {
+  color: white;
+  margin-left: 5%;
+  padding-top: 3%;
+}
+  @media (min-width: 748px) {
+    header {
+      flex-direction: row;
+      padding: 1% 5%;
+    }
+    header div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+    header div h3 {
+      padding-left: 9px;
+    }
+    header div h4 {
+      padding-left: 16px;
+    }
+    header nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+   header nav a {
+     border-bottom: none;
+   }
+   form {
+     width: 50%;
+     margin: 1% auto;
+     padding: 60px 60px 20px;
+   }
+
+   label {
+     /*width: 28%;*/
+     width: 200px;
+   }
+   input, select, textarea {
+     width: 80%;
+     padding: 6px;
+   }
+   footer {
+     color: black;
+     font-weight: bold;
+   }
+   .flex-right {
+     justify-content: flex-end;
+   }
+ }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+  <img src="ja.jpg" height="50">
+  <h3>Dušan Ranđelović</h3>
+  <h4>Email: dusanrandjelovic92@gmail.com</h4>
+</div>
+  <nav>
+    <a href="index.html">&#9820; Home</a>
+    <a href="about.html">&#10070; About</a>
+    <a href="photo.html">&#9861; Photo Gallery</a>
+    <a href="blog.html">&#10004; Blog</a>
+ <a href="contact.html">&#9993; Contact</a>
+  </nav>
+</header>
+
+<main>
+<h1>Contact</h1>
+
+<form method="post" action="https://formspree.io/dusanrandjelovic92@gmail.com">
+<p style="font-size:18px; padding-left: 18px; margin-bottom: 30px; color: SaddleBrown"><b>Upisite Vase podatke</b> za uspesno popunjavanje ove forme</p>
+
+<div>
+  <label for="ime">Ime i prezime: </label>
+  <input id="ime" name="ime" minlength="5" required>
+</div>
+
+<div>
+  <label for="telefon">Telefon: </label>
+  <input id="telefon" name="telefon" minlength="6" maxlength="20" placeholder="+381" required>
+</div>
+
+<div>
+  <label for="email">Email: </label>
+  <input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+</div>
+
+<div>
+  <label for="oblast">Izaberite oblast: </label>
+  <select id="oblast" name="oblast">
+    <option value="1">HTML</option>
+    <option value="1">CSS</option>
+    <option value="1">JavaScript</option>
+  </select>
+</div>
+
+<div>
+  <label for="komentar">Vas komentar: </label>
+    <textarea id="komentar" name="komentar" placeholder="Upisite Vas komentar..."></textarea>
+</div>
+
+<br>
+
+<div class="flex-right">
+<button>Posalji</button>
+</div>
+
+</form>
+<footer>
+  <p>&copy; Dusan Randjelovic</p>
+</footer>
+</main>
+
+
+</body>
+</html>

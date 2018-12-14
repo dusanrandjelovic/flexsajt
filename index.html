@@ -1,0 +1,255 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dusan Randjelovic</title>
+  <style>
+  body {
+  background: -webkit-linear-gradient(Ivory, LavenderBlush);
+	font-family: Times;
+	margin: 0;
+  box-sizing: border-box;
+  }
+  header {
+    background: -webkit-linear-gradient(Cornsilk, Bisque);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+    header nav a {
+      color: Sienna;
+      text-decoration: none;
+      padding: 10px 12px;
+
+
+      /*font-size: 19px;
+	  padding-left: 12px;*/
+    }
+    a:hover {
+      color: MintCream;
+      background: Chocolate;
+    }
+   h1 {
+  text-align: center;
+	 color: SaddleBrown;
+	 letter-spacing: 0.02em;
+   border: 2px solid SaddleBrown;
+   border-right: 15px dashed Sienna;
+   width: 90%;
+   display: block;
+   margin: 30px auto;
+   padding: 5px;
+    font-size: 48px;
+   }
+   /*.as {
+     display: block;
+     margin: auto;
+   }
+   .as:hover {
+     opacity: 0.8;
+   }*/
+   .trikolone {
+     display: flex;
+     flex-direction: column;
+     margin: 2% 6%;
+   }
+   .trikolone p {
+     /*border: 1px solid black;*/
+        width: 100%;
+        padding: 5px 15px;
+        color: SaddleBrown;
+        line-height: 1.5em;
+   }
+   .as {
+     width: 100%;
+     /*border: 1px solid black;*/
+     padding: 16px 10px;
+   }
+
+   .drugideo {
+     background-image: url(slika7.jpg);
+     background-size: cover;
+     width: 100%;
+     height: 350px;
+     margin-top: 40px;
+   }
+   h2 {
+     color: Sienna;
+     text-align: center;
+     padding-top: 30px;
+     font-size: 44px;
+   }
+   .cetirikolone {
+    /* border: 1px solid black;*/
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background: -webkit-linear-gradient(Cornsilk, Bisque);
+   }
+   .kol {
+     /*border: 1px solid black;*/
+     padding: 25px;
+     width: 80%;
+   }
+   .kol a {
+      margin-bottom: 40px;
+      line-height: 1.5em;
+      color: black;
+      text-decoration: none;
+   }
+   .kol a:hover {
+     color: OrangeRed;
+     background: none;
+   }
+   .kol img:hover {
+     opacity: 0.8;
+   }
+   footer {
+   background: -webkit-linear-gradient(Cornsilk, Bisque);
+   clear: both;
+   text-align: center;
+   padding: 14px;
+   }
+   @media (min-width: 748px) {
+     header {
+       flex-direction: row;
+     }
+     header .levo {
+       display: flex;
+       justify-content: center;
+       width: 55%;
+       /*border: 1px solid white;*/
+     }
+     .levo h3 {
+       padding-left: 12px;
+     }
+     .levo h4 {
+       padding-left: 24px;
+       color: SaddleBrown;
+     }
+   header nav {
+     /*padding: 15px;
+     padding-left: 40px;*/
+      display: flex;
+      justify-content: center;
+      width: 45%;
+      flex-direction: row;
+       /*border: 1px solid white;*/
+
+   }
+   .trikolone {
+     flex-direction: row;
+   }
+   .trikolone p {
+     width: 33%;
+   }
+   .as {
+     width: 33%;
+   }
+   h1 {
+     width: 60%;
+   }
+   .cetirikolone {
+     flex-direction: row;
+   }
+   .kol {
+     width: 25%;
+   }
+   }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="levo">
+  <img src="ja.jpg" height="50">
+  <h3 style="color: Sienna">Dušan Ranđelović</h3>
+  <h4>Email: dusanrandjelovic92@gmail.com</h4>
+  <h4>Phone: 065-888-11-96</h4>
+</div>
+  <nav>
+    <a href="index.html">&#9820; Home</a>
+    <a href="about.html">&#10070; About</a>
+    <a href="photo.html">&#9861; Photo Gallery</a>
+    <a href="blog.html">&#10004; Blog</a>
+  <a href="contact.html">&#9993; Contact</a>
+  </nav>
+</header>
+  <h1>Ovaj sajt je responzivan</h1>
+    <h2><strong><em>Svrha sajta je koriscene flexa</em></strong></h2>
+
+    <div class="trikolone">
+      <p>Ove tri kolone su radjene flexom. Div koji uokviruje kolone je dobio gornju i donju marginu, dok je slika
+        dobila padding i sirinu. Istu sirinu je dobio tekst, p, kao i adekvatan padding. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+         aliquip ex ea commodo consequat. </p>
+    <img src="slika5.jpg" alt="opis slike" height="300px" width="390px" class="as">
+    <p>  Heder je dobio pozadinsku boju, padding, flex i tu je uneseno uspravno poravnanje sadrzaja po centru (align-items: center).
+        Flex su dobili i levi deo hedera i desni (nav), dobili su centarsko poravnanje po horizontali i svoje sirine.
+        Tekst sa leve strane je dobio adekvatan padding ulevo. Ankor tag je stilizovan i dobio je sveobuhvatan padding, veci sa leve
+        i desne strane. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur.
+   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure
+   dolor.
+  </p>
+  </div>
+
+    <div class="drugideo">
+       <h2 style="padding-top: 100px; color: black;">Tekst preko slike</h2>
+    </div>
+
+	<div class="trecideo">
+       <h2>Cetiri kolone</h2>
+
+    <div class="cetirikolone">
+
+      <div class="kol">
+      <p>Div koji uokviruje kolone dobio je flex i vodoravno poravnanje kolona po centru. Kolone su dobile padding. Tekstu kod
+        slika data je donja margina da se napravi razmak izmedju celina u koloni. Kolone su dobile sirinu 25%, to je heophodno jer
+        kad se kasnije koriguje tekst, kolone postaju nejednake u sirini. Ako  se ne menja duzina prvobitnog teksta, sirina
+        nije potrebna.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur.</p>
+      </div>
+
+	   <div class="kol">
+	   <img src="slika6.jpg" height="170">
+	   <p><a href="" target="_blank">Free photos</a></p>
+	   <img src="slika8.jpg" height="170">
+	   <p><a href="" target="_blank">Free video</a></p>
+	   </div>
+	    <div class="kol">
+		<img src="slika8.jpg" height="170">
+		<p><a href="" target="_blank">Prirodnjacki centar Sumarak</a></p>
+		<img src="slika9.jpg" height="170">
+	   <p><a href="" target="_blank">Informalno ucenje</a></p>
+	   </div>
+
+     <div class="kol">
+    <p>Informalno ucenje. Informalno ucenje. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+       deserunt mollit anim id est laborum.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+  eu fugiat nulla pariatur. Informalno ucenje. Informalno ucenje. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+     deserunt mollit anim id est laborum.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur.</p>
+    </div>
+
+</div>
+
+    </div>
+
+<footer>
+  <p>&copy; Dusan Randjelovic</p>
+</footer>
+</body>
+</html>

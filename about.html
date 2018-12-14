@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <title>About</title>
+  <style>
+  body {
+    margin: 0;
+    background: -webkit-linear-gradient(Ivory, LavenderBlush);
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    background: -webkit-linear-gradient(Cornsilk, Bisque);
+    color: Sienna;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    color: Sienna;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-bottom: 1px solid white;
+  }
+  nav a:hover {
+    background: Sienna;
+    color: white;
+  }
+  .container {
+    margin: 2% 7%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article p {
+    line-height: 1.5em;
+  }
+  aside a {
+    text-decoration: none;
+    color: Sienna;
+  }
+  aside a:hover {
+    color: SaddleBrown;
+    background: Azure;
+    text-transform: uppercase;
+  }
+  .kviz {
+    margin-top: 50px;
+  }
+  @media (min-width: 748px) {
+    header {
+      flex-direction: row;
+      padding: 1% 5%;
+    }
+    header div {
+      display: flex;
+      width: 55%;
+      flex-wrap: wrap;
+      /*border: 1px solid green;*/
+    }
+    header div h3 {
+      padding-left: 9px;
+    }
+    header div h4 {
+      padding-left: 16px;
+    }
+    header nav {
+      flex-direction: row;
+      width: 45%;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    /*  border: 1px solid green;*/
+    }
+    header nav a {
+      border-bottom: none;
+    }
+    main {
+      flex-direction: row;
+    }
+    aside {
+      width: 20%;
+      background: -webkit-linear-gradient(Cornsilk, Bisque);
+      padding: 20px;
+    /*  border: 1px solid red;*/
+    }
+
+    article {
+      padding-left: 50px;
+      flex-wrap: nowrap;
+      width: 80%;
+      /*border: 1px solid red;*/
+    }
+    .kol {
+      padding: 1% 4%;
+    /*  border: 1px solid blue;*/
+      width: 40%;
+    }
+    .kviz {
+      border: 2px solid black;
+    }
+    .flex {
+      display: flex;
+      margin: 1% 1%;
+    }
+    .pitanje {
+      /*border: 2px solid red;*/
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+    }
+    input {
+      width: 290px;
+    }
+    .uputstvo {
+      width: 40%;
+      padding: 1%;
+      border: 2px solid SaddleBrown;
+    }
+    .kviz h1, button {
+      margin-left: 1%;
+    }
+  }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+  <img src="ja.jpg" height="50">
+  <h3>Dušan Ranđelović</h3>
+  <h4>Email: dusanrandjelovic92@gmail.com</h4>
+  <h4>Phone: 065-888-11-96</h4>
+</div>
+  <nav>
+    <a href="index.html">&#9820; Home</a>
+    <a href="about.html">&#10070; About</a>
+    <a href="photo.html">&#9861; Photo Gallery</a>
+    <a href="blog.html">&#10004; Blog</a>
+	<a href="contact.html">&#9993; Contact</a>
+  </nav>
+</header>
+<h1 style="text-align: center; color: SaddleBrown;">Na ovoj strani je kviz</h1>
+  <main class="container">
+<aside>
+  <h3 style="color: SaddleBrown;">Linkovi</h3>
+  <br>
+  <p><a href="https://dusanrandjelovic.github.io/Portfolio/index.html" target="_blank">Portfolio</a></p>
+  <p><a href="https://dusanrandjelovic.github.io/freevideo/" target="_blank">Free Video</a></p>
+  <p><a href="https://dusanrandjelovic.github.io/freephotos/#ph1" target="_blank">Free Photos</a></p>
+  <p><a href="https://prirodnjackicentarsumarak.000webhostapp.com/" target="_blank">Prirodnjacki centar Sumarak</a></p>
+  <p><a href="https://prirodnjackicentarsumarak.000webhostapp.com/" target="_blank">Serbian Dogs</a></p>
+  <p><a href="https://informalnoucenje.000webhostapp.com/" target="_blank">Informal Learning</a></p>
+  <p><a href="https://codepen.io/dusanrandjelovic/full/eEdjJj/" target="_blank">Gym Big Cash</a></p>
+  <p><a href="https://codepen.io/dusanrandjelovic/full/jLgVVz/" target="_blank">Dairy</a></p>
+  <p><a href="https://dusanrandjelovic.github.io/simplequiz/" target="_blank">Simple Quiz</a></p>
+</aside>
+
+
+<article>
+
+  <div class="kol">
+    <p>Za mobilni: heder je dobio flex, flex direkciju za kolonu, uspravno poravnanje centar, padding-top i text-align centar.
+      Heder za laptop dobio je samo drugu direkciju, row, i sveobuhvatan padding.
+      <br>
+      Navigacija je takodje dobila flex, direkciju kolona, text-align centar, i dobila je sirinu od 100%. Moglo je i bez
+      stilizovanja navigacije, ali bi tada bila u redu, ali opet funkcionalna i prihvatljiva.
+      <br>
+      Ove tri kolone su u main delu. Main je dobio, za mobilni, display flex i direkciju kolona, dok je i article (2 i 3 kolona)
+      dobio flex i wrap da bude u koloni.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+  </div>
+
+  <div class="kol">
+    <p>Za laptop: Sada je levi deo hedera morao da dobije flex kako bi bio u linji. I dobio je sirinu, a navigacija je dobila
+      manju sirinu, direkciju row, kao i drugi display da bi bila u liniji inline-block. Ankor tag je dobio inline-flex, a
+      mogao je bez toga. Tekst sa leve strane hedera dobio je padding-left.
+      <br>
+      Za laptop main ima direkciju row. Aside sirinu 20%, article 80%, a dva teksta u article po 40% sirine. Article je dobio i no nowrap
+      da bi bio u redu, dobio je i levi padding da se odvoji od linkova. Ove dve kolone sa objasnjenjem dobile su padding.
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</article>
+  </main>
+
+  <div class="kviz container">
+    <h1>Kviz</h1>
+    <div class="flex">
+
+   <div class="pitanje">
+    <h3>1. Kako se zove glavni grad Australije?</h3>
+    <input id="odg1" >
+    <h5 id="pasus1"></h5>
+
+   <h3>2. Kako se zove glavni grad Brazila?</h3>
+   <input id="odg2">
+   <h5 id="pasus2"></h5>
+
+  <h3>3. Kako se zove glavni grad Filipina?</h3>
+  <input id="odg3">
+  <h5 id="pasus3"></h5>
+</div>
+
+<div class="uputstvo">
+  <h3>Uputstvo</h3>
+<p style="line-height:1.6em;">Div roditelj za ovaj deo dobio je flex. Levi deo kviza dobio je flex takodje, direkciju da bude u koloni i sirinu.
+  Desni deo, uputstvo, dobio je samo sirinu.
+  <br>
+ Broj poena je jedina promenljiva varijabla, dok su odgovori i ispis tacnih/netacnih recenica kao i ispis o broju poena konstantni.
+Postoje 4 funkcije, 3 za svako pitanje i poslednja za ispis broja poena. Dugme je povezano sa sve cetiri funkcije.</p>
+</div>
+
+</div>
+<!--  <h3>4. Kako se zove najpoznatiji pretrazivac?</h3>
+  <input id="odg4" style="padding: 2%">
+  <h3 id="pasus4"></h3>-->
+
+<button id="dugme"  style="padding: 1%">Pogledaj broj poena</button>
+<button id="reset"  style="padding: 1%">Reset</button>
+<h3 id="poeniprostor"></h3>
+
+  </div>
+
+<footer class="container">
+  <p>&copy; Dusan Randjelovic</p>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: black;
+  background-image: -webkit-linear-gradient(#FFFAFA, #FFFFF0);
+  font-family: Times;
+}
+.header {
+  height: 70px;
+  width: 100%;
+  /*background-color: OrangeRed;*/
+  color: Snow;
+  position: fixed;
+  z-index: 1000;
+  opacity: 0.9;
+  top: -8px;
+  background-image: -webkit-linear-gradient(#FF4500, #FF8C00);
+}
+.header p {
+  padding-left: 50px;
+  padding-top: 20px;
+  float: left;
+  font-size: 150%;
+}
+ul {
+  list-style-type: none;
+  float: right;
+}
+li {
+  display: inline-block;
+  padding-right: 50px;
+  padding-top: 24px;
+  font-size: 130%;
+  letter-spacing: 0.02em;
+}
+a {
+  color: Snow;
+}
+a:hover {
+  color: SaddleBrown;
+  text-decoration: none;
+}
+.srediste h1 {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.srediste p {
+  width: 80%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7em;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+button {
+  margin-left: 585px;
+  margin-top: 50px;
+  padding: 17px;
+  border-color: OrangeRed;
+  background-color: Snow;
+  color: OrangeRed;
+}
+#as {
+  margin-left: 635px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: OrangeRed;
+}
+.footer {
+  clear: both;
+  height: 110px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(#FF4500, #FF8C00);
+  margin-top: 90px;
+}
+.levo {
+  float: left;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+.levo p {
+  float: left;
+  color: Snow;
+  font-size: 140%;
+}
+.te {
+  padding-left: 300px;
+}
+.desno {
+  float: right;
+}
+.desno a img {
+  height: 50px;
+  padding-left: 44px;
+}
+.desno p {
+  color: Snow;
+  padding-top: 17px;
+  padding-right: 70px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+  <div id="page2">
+
+    <div class="header">
+      <p><a href="https://codepen.io/dusanrandjelovic/full/mpMXjB/" target="_blank">Dušan Ranđelović |</a></p>
+      <ul>
+        <li><a href="#" style="text-transform: uppercase;">How I Started</a></li>
+        <li><a href="https://codepen.io/dusanrandjelovic/full/PErdNZ/" target="_blank">CodePen Websites</a></li>
+        <li><a href="https://codepen.io/dusanrandjelovic/full/aEgXXB/" target="_blank" >Atom Websites and Logos</a></li>
+        <li><a href="https://codepen.io/dusanrandjelovic/full/WdVzgb/" target="_blank">WordPress Websites</a></li>
+        <li><a href="https://codepen.io/dusanrandjelovic/full/goVBPm/" target="_blank">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="srediste">
+    <h1>How I Started</h1>
+      <div class="col-sm-6">
+    <p>Without any knowledge of coding, about programming, without any knowledge of website creation, I needed to have some clear goal about what I want to learn. This goal was: I want to make a website. With research, firstly, I came to WordPress, free website builder. With WordPress I made couple of websites. Because those sites are tottaly free (free domain name and hosting), they have subdomain .wordpress and some of them have advertisement for WordPress on their pages. But when site was finished, he was not visible on google search. Then, I found that I need to submit URL of my website to google. After that, my site is visible. 9/12 WordPress websites, that I made, are on first google page after search, without typing .wordpress. You only need to type, for example, mlekara mlecni zalogaj, and you will see this site on first google page.</p>
+      </div>
+      <div class="col-sm-6">
+    <p>My first goal was accomplished. Second goal was: I want to code site. With research, I found W3schools, freeCodeCamp, codecademy, free platforms for learning. I learned HTML5 and CSS3, Bootstrap, and when I started with JavaScript and jQuery, I had first problems to understand how to implement theory in practice. In CodePen I made first sites by coding. But, CodePen is working platform and sites are not visible on google search. I realised that I need code editor and host. I downloaded Atom, free code editor and made files with HTML5 and CSS3. I chose 000webhost to host my sites and simply copy/pasted files on required space on my 000webhost profile. I did not need Filezile. Three sites that I coded, are part of world wide web: informalno ucenje, serbian dogs, prirodnjacki centar sumarak. But, problem with free 000webhost hosting is: suffix on domain name .000webhostapp; 4 hours a day site is sleeping; there are advertisements on site pages.  </p>
+      </div>
+    </div>
+
+    <div>
+      <p style="color: OrangeRed; text-align: center;">____________________</p>
+    </div>
+
+    <div>
+      <button onclick="myFunction1()">What I am learning now?</button>
+    <p id="as"></p>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="levo">
+      <p>&copy; Dusan Randjelovic |</p>
+      <p class="te">dusanrandjelovic92@gmail.com</p>
+      </div>
+      <div class="desno">
+        <p>My LinkedIn profile:</p>
+        <a href="https://www.linkedin.com/in/dusan-randjelovic-98a170134/" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/bubble-gradient-social-media-1/200/linkedin-128.png" /></a>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>-->

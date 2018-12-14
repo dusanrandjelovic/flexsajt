@@ -1,0 +1,203 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Photo</title>
+  <style>
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(Ivory, LavenderBlush);
+  }
+  /*header {
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+  }
+  header img {
+    display: block;
+    margin: auto;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  nav a:hover {
+    background: white;
+    color: gray;
+  }*/
+
+  header {
+    display: flex;
+    background: -webkit-linear-gradient(Cornsilk, Bisque);
+    color: Sienna;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1%;
+    text-align: center;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: Sienna;
+    padding: 10px 12px;
+    border-bottom: 1px solid white;
+
+  }
+  header nav a:hover {
+    background: Sienna;
+    color: white;
+  }
+  h1 {
+    padding-top: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+  }
+  .kol {
+    flex: 100%;
+    max-width: 100%;
+    padding: 1% 1%;
+  }
+  .kol img {
+    width: 100%;
+    margin-top: 8px;
+  }
+  footer {
+    padding: 1% 5%;
+  }
+  @media (min-width: 600px) {
+
+    .kol {
+      flex: 47%;
+      max-width: 47%;
+  }
+  .kol3 {
+    display: block;
+    margin: auto;
+  }
+  }
+  @media (min-width: 800px) {
+    /*header {
+      flex-direction: row;
+      align-items: center;
+    }
+    header img {
+      display: inline-block;
+      margin: 5px;
+    }
+    header div {
+      display: flex;
+      width: 50%;
+      padding-left: 10%;
+      border: 1px solid red;
+    }
+  nav {
+      width: 80%;
+    border: 1px solid blue;
+    }
+    /*nav a {
+      display: inline-block;
+      border-bottom: none;
+    }*/
+    header {
+      flex-direction: row;
+      padding: 1% 5%;
+    }
+    header div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+    header div h3 {
+      padding-left: 9px;
+    }
+    header div h4 {
+      padding-left: 16px;
+    }
+    header nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+   header nav a {
+     border-bottom: none;
+   }
+    .kol {
+      flex: 31%;
+      max-width: 31%;
+  }
+  }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+  <img src="ja.jpg" height="50">
+  <h3>Dušan Ranđelović</h3>
+  <h4>Email: dusanrandjelovic92@gmail.com</h4>
+</div>
+
+  <nav>
+    <a href="index.html">&#9820; Home</a>
+    <a href="about.html">&#10070; About</a>
+    <a href="photo.html">&#9861; Photo Gallery</a>
+    <a href="blog.html">&#10004; Blog</a>
+    <a href="contact.html">&#9993; Contact</a>
+  </nav>
+</header>
+
+  <h1>Photo Gallery</h1>
+
+  <main>
+    <div class="kol">
+    <a href="slika2.jpg" target="_blank"><img src="slika3.jpg" height="200"></a>
+      <a href="slika2.jpg" target="_blank"><img src="slika4.jpg" height="200"></a>
+      <a href="slika2.jpg" target="_blank"><img src="slika3.jpg" height="200"></a>
+        <a href="slika2.jpg" target="_blank"><img src="slika4.jpg" height="200"></a>
+        <a href="slika2.jpg" target="_blank"><img src="slika.jpg" height="200"></a>
+        <a href="slika2.jpg"><img src="slika2.jpg" height="200"></a>
+      </div>
+
+      <div class="kol">
+          <a href="slika2.jpg"><img src="slika2.jpg" height="200"></a>
+          <a href="slika2.jpg"><img src="slika.jpg" height="200"></a>
+            <a href="slika2.jpg"><img src="slika4.jpg" height="200"></a>
+            <a href="slika2.jpg"><img src="slika.jpg" height="200"></a>
+              <a href="slika2.jpg"><img src="slika3.jpg" height="200"></a>
+              <a href="slika2.jpg"><img src="slika4.jpg" height="200"></a>
+            </div>
+
+            <div class="kol kol3">
+              <a href="slika2.jpg"><img src="slika2.jpg" height="200"></a>
+            <a href="slika2.jpg" target="_blank"><img src="slika3.jpg" height="200"></a>
+              <a href="slika2.jpg" target="_blank"><img src="slika4.jpg" height="200"></a>
+              <a href="slika2.jpg" target="_blank"><img src="slika3.jpg" height="200"></a>
+                <a href="slika2.jpg" target="_blank"><img src="slika4.jpg" height="200"></a>
+                <a href="slika2.jpg" target="_blank"><img src="slika.jpg" height="200"></a>
+              </div>
+
+
+  </main>
+
+<footer>
+  <p>&copy; Dusan Randjelovic</p>
+</footer>
+</body>
+</html>
