@@ -66,6 +66,13 @@
   .kviz {
     margin-top: 50px;
   }
+  .kol h1 a {
+    text-decoration: none;
+    color: SaddleBrown;
+  }
+  .kol h1 a:hover {
+    color: Sienna;
+  }
   @media (min-width: 748px) {
     header {
       flex-direction: row;
@@ -189,6 +196,7 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+      <h1><a href="https://dusanrandjelovic.github.io/siteone/" target="_blank">Resume</a></h1>
   </div>
 
   <div class="kol">
@@ -203,7 +211,9 @@
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
+    <h1><a href="https://dusanrandjelovic.github.io/informalno/" target="_blank">Informalno ucenje</a></h1>
   </div>
+
 </article>
   </main>
 
@@ -214,15 +224,15 @@
    <div class="pitanje">
     <h3>1. Kako se zove glavni grad Australije?</h3>
     <input id="odg1" >
-    <h5 id="pasus1"></h5>
+    <p id="pasus1"></p>
 
    <h3>2. Kako se zove glavni grad Brazila?</h3>
    <input id="odg2">
-   <h5 id="pasus2"></h5>
+   <p id="pasus2"></p>
 
   <h3>3. Kako se zove glavni grad Filipina?</h3>
   <input id="odg3">
-  <h5 id="pasus3"></h5>
+  <p id="pasus3"></p>
 </div>
 
 <div class="uputstvo">
@@ -241,7 +251,7 @@ Postoje 4 funkcije, 3 za svako pitanje i poslednja za ispis broja poena. Dugme j
 
 <button id="dugme"  style="padding: 1%">Pogledaj broj poena</button>
 <button id="reset"  style="padding: 1%">Reset</button>
-<h3 id="poeniprostor"></h3>
+<p id="poeniprostor"></p>
 
   </div>
 
